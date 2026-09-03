@@ -1,0 +1,3031 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20261.26.0410.0924                               -->
+<workbook original-version='18.1' source-build='2026.1.1 (20261.26.0410.0924)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder />
+    <AnimationOnByDefault />
+    <AutoCreateAndUpdateDSDPhoneLayouts />
+    <_.fcp.IndividualControlFormatting.true...IndividualControlFormatting />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SetMembershipControl />
+    <SheetIdentifierTracking />
+    <SortTagCleanup />
+    <WindowsPersistSimpleIdentifiers />
+    <WorksheetBackgroundTransparency />
+    <ZoneBackgroundTransparency />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+    <color-palette custom='true' name='whitesss' type='ordered-diverging'>
+      <color>#ffffff</color>
+      <color>#ffffff</color>
+      <color>#ffffff</color>
+    </color-palette>
+  </preferences>
+  <datasources>
+    <datasource caption='phishing_tableau_data' inline='true' name='federated.1wg5yce0ceru3j14prn041u5uzny' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='phishing_tableau_data' name='textscan.0osha5d1wn7c5o14moywk1140nn7'>
+            <connection class='textscan' directory='C:/Users/aksha/Downloads/tableu_ANN' filename='phishing_tableau_data.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0osha5d1wn7c5o14moywk1140nn7' name='phishing_tableau_data.csv' table='[phishing_tableau_data#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Domain' ordinal='0' />
+            <column datatype='string' name='TLD' ordinal='1' />
+            <column datatype='integer' name='URLLength' ordinal='2' />
+            <column datatype='integer' name='DomainLength' ordinal='3' />
+            <column datatype='integer' name='IsDomainIP' ordinal='4' />
+            <column datatype='integer' name='TLDLength' ordinal='5' />
+            <column datatype='integer' name='NoOfSubDomain' ordinal='6' />
+            <column datatype='integer' name='HasObfuscation' ordinal='7' />
+            <column datatype='integer' name='NoOfObfuscatedChar' ordinal='8' />
+            <column datatype='real' name='ObfuscationRatio' ordinal='9' />
+            <column datatype='integer' name='NoOfLettersInURL' ordinal='10' />
+            <column datatype='real' name='LetterRatioInURL' ordinal='11' />
+            <column datatype='integer' name='NoOfDegitsInURL' ordinal='12' />
+            <column datatype='real' name='DegitRatioInURL' ordinal='13' />
+            <column datatype='integer' name='NoOfEqualsInURL' ordinal='14' />
+            <column datatype='integer' name='NoOfQMarkInURL' ordinal='15' />
+            <column datatype='integer' name='NoOfAmpersandInURL' ordinal='16' />
+            <column datatype='integer' name='NoOfOtherSpecialCharsInURL' ordinal='17' />
+            <column datatype='real' name='SpacialCharRatioInURL' ordinal='18' />
+            <column datatype='integer' name='IsHTTPS' ordinal='19' />
+            <column datatype='integer' name='Bank' ordinal='20' />
+            <column datatype='integer' name='Pay' ordinal='21' />
+            <column datatype='integer' name='Crypto' ordinal='22' />
+            <column datatype='integer' name='label' ordinal='23' />
+            <column datatype='string' name='Website_Status' ordinal='24' />
+            <column datatype='string' name='HTTPS_Used' ordinal='25' />
+            <column datatype='string' name='Is_Domain_IP' ordinal='26' />
+            <column datatype='string' name='Has_Obfuscation' ordinal='27' />
+            <column datatype='string' name='Mentions_Bank' ordinal='28' />
+            <column datatype='string' name='Mentions_Pay' ordinal='29' />
+            <column datatype='string' name='Mentions_Crypto' ordinal='30' />
+            <column datatype='string' name='TLD_Group' ordinal='31' />
+            <column datatype='string' name='URL_Length_Bucket' ordinal='32' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Domain</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Domain]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Domain</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TLD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TLD]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>TLD</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URLLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[URLLength]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>URLLength</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DomainLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DomainLength]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>DomainLength</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsDomainIP</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsDomainIP]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>IsDomainIP</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TLDLength</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TLDLength]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>TLDLength</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfSubDomain</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfSubDomain]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfSubDomain</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HasObfuscation</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HasObfuscation]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>HasObfuscation</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfObfuscatedChar</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfObfuscatedChar]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfObfuscatedChar</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ObfuscationRatio</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[ObfuscationRatio]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>ObfuscationRatio</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfLettersInURL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfLettersInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfLettersInURL</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LetterRatioInURL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LetterRatioInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>LetterRatioInURL</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfDegitsInURL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfDegitsInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfDegitsInURL</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DegitRatioInURL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[DegitRatioInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>DegitRatioInURL</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfEqualsInURL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfEqualsInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfEqualsInURL</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfQMarkInURL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfQMarkInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfQMarkInURL</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfAmpersandInURL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfAmpersandInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfAmpersandInURL</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NoOfOtherSpecialCharsInURL</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NoOfOtherSpecialCharsInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>NoOfOtherSpecialCharsInURL</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SpacialCharRatioInURL</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[SpacialCharRatioInURL]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>SpacialCharRatioInURL</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>IsHTTPS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[IsHTTPS]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>IsHTTPS</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bank]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Bank</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Pay</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Pay]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Pay</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Crypto</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Crypto]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Crypto</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>label</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[label]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>label</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Website_Status</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Website_Status]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Website_Status</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HTTPS_Used</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HTTPS_Used]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>HTTPS_Used</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Is_Domain_IP</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Is_Domain_IP]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Is_Domain_IP</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Has_Obfuscation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Has_Obfuscation]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Has_Obfuscation</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mentions_Bank</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mentions_Bank]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Mentions_Bank</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mentions_Pay</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mentions_Pay]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Mentions_Pay</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mentions_Crypto</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Mentions_Crypto]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>Mentions_Crypto</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TLD_Group</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[TLD_Group]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>TLD_Group</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>URL_Length_Bucket</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[URL_Length_Bucket]</local-name>
+            <parent-name>[phishing_tableau_data.csv]</parent-name>
+            <remote-alias>URL_Length_Bucket</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Phishing Rate' datatype='real' name='[Calculation_1580860170960896]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [label] = 0 THEN 1 ELSE 0 END) / COUNT([label])' />
+      </column>
+      <column caption='Legit Rate' datatype='real' name='[Calculation_1580860171157505]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='SUM(IF [label] = 1 THEN 1 ELSE 0 END) / COUNT([label])' />
+      </column>
+      <column caption='Record Count' datatype='integer' name='[Calculation_1580860171337730]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='COUNT([label])' />
+      </column>
+      <column caption='zero' datatype='integer' name='[Calculation_1580860395679747]' role='measure' type='quantitative'>
+        <calculation class='tableau' formula='0' />
+      </column>
+      <column caption='Degit Ratio In URL' datatype='real' name='[DegitRatioInURL]' role='measure' type='quantitative' />
+      <column caption='Domain Length' datatype='integer' name='[DomainLength]' role='measure' type='quantitative' />
+      <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+      <column caption='Has Obfuscation' datatype='integer' name='[HasObfuscation]' role='measure' type='quantitative' />
+      <column caption='Has Obfuscation1' datatype='string' name='[Has_Obfuscation]' role='dimension' type='nominal' />
+      <column caption='Is Domain IP' datatype='integer' name='[IsDomainIP]' role='measure' type='quantitative' />
+      <column caption='Is HTTPS' datatype='integer' name='[IsHTTPS]' role='measure' type='quantitative' />
+      <column caption='Is Domain IP1' datatype='string' name='[Is_Domain_IP]' role='dimension' type='nominal' />
+      <column caption='Letter Ratio In URL' datatype='real' name='[LetterRatioInURL]' role='measure' type='quantitative' />
+      <column caption='Mentions Bank' datatype='string' name='[Mentions_Bank]' role='dimension' type='nominal' />
+      <column caption='Mentions Crypto' datatype='string' name='[Mentions_Crypto]' role='dimension' type='nominal' />
+      <column caption='Mentions Pay' datatype='string' name='[Mentions_Pay]' role='dimension' type='nominal' />
+      <column caption='No Of Ampersand In URL' datatype='integer' name='[NoOfAmpersandInURL]' role='measure' type='quantitative' />
+      <column caption='No Of Degits In URL' datatype='integer' name='[NoOfDegitsInURL]' role='measure' type='quantitative' />
+      <column caption='No Of Equals In URL' datatype='integer' name='[NoOfEqualsInURL]' role='measure' type='quantitative' />
+      <column caption='No Of Letters In URL' datatype='integer' name='[NoOfLettersInURL]' role='measure' type='quantitative' />
+      <column caption='No Of Obfuscated Char' datatype='integer' name='[NoOfObfuscatedChar]' role='measure' type='quantitative' />
+      <column caption='No Of Other Special Chars In URL' datatype='integer' name='[NoOfOtherSpecialCharsInURL]' role='measure' type='quantitative' />
+      <column caption='No Of Q Mark In URL' datatype='integer' name='[NoOfQMarkInURL]' role='measure' type='quantitative' />
+      <column caption='No Of Sub Domain' datatype='integer' name='[NoOfSubDomain]' role='measure' type='quantitative' />
+      <column caption='Obfuscation Ratio' datatype='real' name='[ObfuscationRatio]' role='measure' type='quantitative' />
+      <column caption='Spacial Char Ratio In URL' datatype='real' name='[SpacialCharRatioInURL]' role='measure' type='quantitative' />
+      <column caption='TLD Length' datatype='integer' name='[TLDLength]' role='measure' type='quantitative' />
+      <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+      <column caption='URL Length' datatype='integer' name='[URLLength]' role='measure' type='quantitative' />
+      <column caption='URL Length Bucket' datatype='string' name='[URL_Length_Bucket]' role='dimension' type='nominal' />
+      <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+      <column caption='phishing_tableau_data.csv' datatype='table' name='[__tableau_internal_object_id__].[phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB]' role='measure' type='quantitative' />
+      <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+      <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+      <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[none:Website_Status:nk]' type='palette'>
+            <map to='#29aa23'>
+              <bucket>&quot;Legitimate&quot;</bucket>
+            </map>
+            <map to='#4e79a7'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#bc0000'>
+              <bucket>&quot;Phishing&quot;</bucket>
+            </map>
+          </encoding>
+          <encoding attr='color' field='[none:HTTPS_Used:nk]' palette='traffic_light_10_0' type='palette'>
+            <map to='#309143'>
+              <bucket>&quot;Yes&quot;</bucket>
+            </map>
+            <map to='#b60a1c'>
+              <bucket>%null%</bucket>
+            </map>
+            <map to='#e39802'>
+              <bucket>&quot;No&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='phishing_tableau_data.csv' id='phishing_tableau_data.csv_C3CFF4648ACC497B96280DF8F12529AB'>
+            <properties context=''>
+              <relation connection='textscan.0osha5d1wn7c5o14moywk1140nn7' name='phishing_tableau_data.csv' table='[phishing_tableau_data#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Domain' ordinal='0' />
+                  <column datatype='string' name='TLD' ordinal='1' />
+                  <column datatype='integer' name='URLLength' ordinal='2' />
+                  <column datatype='integer' name='DomainLength' ordinal='3' />
+                  <column datatype='integer' name='IsDomainIP' ordinal='4' />
+                  <column datatype='integer' name='TLDLength' ordinal='5' />
+                  <column datatype='integer' name='NoOfSubDomain' ordinal='6' />
+                  <column datatype='integer' name='HasObfuscation' ordinal='7' />
+                  <column datatype='integer' name='NoOfObfuscatedChar' ordinal='8' />
+                  <column datatype='real' name='ObfuscationRatio' ordinal='9' />
+                  <column datatype='integer' name='NoOfLettersInURL' ordinal='10' />
+                  <column datatype='real' name='LetterRatioInURL' ordinal='11' />
+                  <column datatype='integer' name='NoOfDegitsInURL' ordinal='12' />
+                  <column datatype='real' name='DegitRatioInURL' ordinal='13' />
+                  <column datatype='integer' name='NoOfEqualsInURL' ordinal='14' />
+                  <column datatype='integer' name='NoOfQMarkInURL' ordinal='15' />
+                  <column datatype='integer' name='NoOfAmpersandInURL' ordinal='16' />
+                  <column datatype='integer' name='NoOfOtherSpecialCharsInURL' ordinal='17' />
+                  <column datatype='real' name='SpacialCharRatioInURL' ordinal='18' />
+                  <column datatype='integer' name='IsHTTPS' ordinal='19' />
+                  <column datatype='integer' name='Bank' ordinal='20' />
+                  <column datatype='integer' name='Pay' ordinal='21' />
+                  <column datatype='integer' name='Crypto' ordinal='22' />
+                  <column datatype='integer' name='label' ordinal='23' />
+                  <column datatype='string' name='Website_Status' ordinal='24' />
+                  <column datatype='string' name='HTTPS_Used' ordinal='25' />
+                  <column datatype='string' name='Is_Domain_IP' ordinal='26' />
+                  <column datatype='string' name='Has_Obfuscation' ordinal='27' />
+                  <column datatype='string' name='Mentions_Bank' ordinal='28' />
+                  <column datatype='string' name='Mentions_Pay' ordinal='29' />
+                  <column datatype='string' name='Mentions_Crypto' ordinal='30' />
+                  <column datatype='string' name='TLD_Group' ordinal='31' />
+                  <column datatype='string' name='URL_Length_Bucket' ordinal='32' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption='phishing_feature_importance' inline='true' name='federated.149gd9r0q6w2dz15y8uoy1st7e5q' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='phishing_feature_importance' name='textscan.0q5n6l81j7j5wa17ufz6x1y4gcvj'>
+            <connection class='textscan' directory='C:/Users/aksha/Downloads/tableu_ANN' filename='phishing_feature_importance.csv' password='' server='' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0q5n6l81j7j5wa17ufz6x1y4gcvj' name='phishing_feature_importance.csv' table='[phishing_feature_importance#csv]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+            <column datatype='string' name='Feature' ordinal='0' />
+            <column datatype='real' name='Correlation_With_Label' ordinal='1' />
+            <column datatype='real' name='Mutual_Information' ordinal='2' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[phishing_feature_importance.csv]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_GB&quot;</attribute>
+              <attribute datatype='string' name='currency'>&quot;₹&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;,&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_IN&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Feature</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[Feature]</local-name>
+            <parent-name>[phishing_feature_importance.csv]</parent-name>
+            <remote-alias>Feature</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RGB' />
+            <object-id>[phishing_feature_importance.csv_C3C0D3551A784B37B9127A1586652999]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Correlation_With_Label</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Correlation_With_Label]</local-name>
+            <parent-name>[phishing_feature_importance.csv]</parent-name>
+            <remote-alias>Correlation_With_Label</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_feature_importance.csv_C3C0D3551A784B37B9127A1586652999]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Mutual_Information</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[Mutual_Information]</local-name>
+            <parent-name>[phishing_feature_importance.csv]</parent-name>
+            <remote-alias>Mutual_Information</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[phishing_feature_importance.csv_C3C0D3551A784B37B9127A1586652999]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Correlation With Label' datatype='real' name='[Correlation_With_Label]' role='measure' type='quantitative' />
+      <column caption='Mutual Information' datatype='real' name='[Mutual_Information]' role='measure' type='quantitative' />
+      <column caption='phishing_feature_importance.csv' datatype='table' name='[__tableau_internal_object_id__].[phishing_feature_importance.csv_C3C0D3551A784B37B9127A1586652999]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;India&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='phishing_feature_importance.csv' id='phishing_feature_importance.csv_C3C0D3551A784B37B9127A1586652999'>
+            <properties context=''>
+              <relation connection='textscan.0q5n6l81j7j5wa17ufz6x1y4gcvj' name='phishing_feature_importance.csv' table='[phishing_feature_importance#csv]' type='table'>
+                <columns character-set='UTF-8' header='yes' locale='en_IN' separator=','>
+                  <column datatype='string' name='Feature' ordinal='0' />
+                  <column datatype='real' name='Correlation_With_Label' ordinal='1' />
+                  <column datatype='real' name='Mutual_Information' ordinal='2' />
+                </columns>
+              </relation>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <shared-views>
+    <shared-view name='federated.1wg5yce0ceru3j14prn041u5uzny'>
+      <datasources>
+        <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+        <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+        <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+        <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+        <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+        <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <filter class='categorical' column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:HTTPS_Used:nk]' member='&quot;No&quot;' />
+          <groupfilter function='member' level='[none:HTTPS_Used:nk]' member='&quot;Yes&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]'>
+        <groupfilter function='union' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate'>
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;app&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;au&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;co&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;com&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;de&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;dev&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;io&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;it&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;jp&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;net&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;org&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;other&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;ru&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;top&quot;' />
+          <groupfilter function='member' level='[none:TLD_Group:nk]' member='&quot;uk&quot;' />
+        </groupfilter>
+      </filter>
+      <filter class='categorical' column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]'>
+        <groupfilter function='level-members' level='[none:Website_Status:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+      </filter>
+    </shared-view>
+  </shared-views>
+  <actions>
+    <action caption='Highlight 1 (generated)' name='[Action1_48A0559AFE7841699ADDADE7CB30F353]'>
+      <activation auto-clear='true' type='on-select' />
+      <source type='sheet' worksheet='URL Length Distribution' />
+      <command command='tsc:brush'>
+        <param name='field-captions' value='Website Status' />
+        <param name='target' value='URL Length Distribution' />
+      </command>
+    </action>
+  </actions>
+  <worksheets>
+    <worksheet name='% Legitimate'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='Legit Rate' datatype='real' name='[Calculation_1580860171157505]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [label] = 1 THEN 1 ELSE 0 END) / COUNT([label])' />
+            </column>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1580860171157505]' derivation='User' name='[usr:Calculation_1580860171157505:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171157505:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5052486658096313' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{19BCAA96-834B-447E-92D9-995BE6A6D6E1}' />
+    </worksheet>
+    <worksheet name='% Phishing'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='Phishing Rate' datatype='real' name='[Calculation_1580860170960896]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [label] = 0 THEN 1 ELSE 0 END) / COUNT([label])' />
+            </column>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1580860170960896]' derivation='User' name='[usr:Calculation_1580860170960896:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' value='#ffffff' />
+            <format attr='background-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' scope='cols' value='#ffffff' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]' min='0.428104922' palette='whitesss' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='band-color' scope='rows' value='#ffffff' />
+            <format attr='background-color' value='#1d195a' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+            <format attr='background-color' data-class='total' scope='cols' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#ffffff' />
+            <format attr='background-color' data-class='total' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1d195a' />
+            <format attr='band-size' scope='rows' value='1' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]' />
+              <text column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.5492265224456787' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{0A10C645-F2FB-4CB6-B4D1-5ED7DCD789DB}' />
+    </worksheet>
+    <worksheet name='Feature Importance'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_feature_importance' name='federated.149gd9r0q6w2dz15y8uoy1st7e5q' />
+          </datasources>
+          <datasource-dependencies datasource='federated.149gd9r0q6w2dz15y8uoy1st7e5q'>
+            <column caption='Correlation With Label' datatype='real' name='[Correlation_With_Label]' role='measure' type='quantitative' />
+            <column datatype='string' name='[Feature]' role='dimension' type='nominal' />
+            <column caption='Mutual Information' datatype='real' name='[Mutual_Information]' role='measure' type='quantitative' />
+            <column-instance column='[Feature]' derivation='None' name='[none:Feature:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Correlation_With_Label]' derivation='Sum' name='[sum:Correlation_With_Label:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Mutual_Information]' derivation='Sum' name='[sum:Mutual_Information:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <computed-sort column='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[none:Feature:nk]' direction='DESC' using='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[sum:Mutual_Information:qk]' />
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='height' field='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[sum:Mutual_Information:qk]' value='32' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='width' field='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[none:Feature:nk]' value='120' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[sum:Correlation_With_Label:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#110f36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[sum:Correlation_With_Label:qk]' />
+              <tooltip column='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[sum:Correlation_With_Label:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[none:Feature:nk]</rows>
+        <cols>[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[sum:Mutual_Information:qk]</cols>
+      </table>
+      <simple-id uuid='{7B1D064C-67AF-42C1-84EE-648571A32F07}' />
+    </worksheet>
+    <worksheet name='HTTPS Usage by Website'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='Record Count' datatype='integer' name='[Calculation_1580860171337730]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([label])' />
+            </column>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1580860171337730]' derivation='User' name='[usr:Calculation_1580860171337730:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#110f36' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' value='#1d195a' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <color column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]</rows>
+        <cols>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</cols>
+      </table>
+      <simple-id uuid='{384E53C0-65B1-4EDB-A3E1-8049ADAE48F8}' />
+    </worksheet>
+    <worksheet name='Legitimate vs Phishing Split'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='Record Count' datatype='integer' name='[Calculation_1580860171337730]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([label])' />
+            </column>
+            <column caption='zero' datatype='integer' name='[Calculation_1580860395679747]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='0' />
+            </column>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1580860395679747]' derivation='Sum' name='[sum:Calculation_1580860395679747:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Calculation_1580860171337730]' derivation='User' name='[usr:Calculation_1580860171337730:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='1' field='[federated.1wg5yce0ceru3j14prn041u5uzny].[sum:Calculation_1580860395679747:qk]' field-type='quantitative' fold='true' scope='rows' type='space' />
+            <format attr='display' class='0' field='[federated.1wg5yce0ceru3j14prn041u5uzny].[sum:Calculation_1580860395679747:qk]' scope='rows' value='false' />
+            <format attr='display' class='1' field='[federated.1wg5yce0ceru3j14prn041u5uzny].[sum:Calculation_1580860395679747:qk]' scope='rows' value='false' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='tick-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='cell'>
+            <format attr='color' data-class='total' scope='cols' value='#000000' />
+            <format attr='color' data-class='subtotal' value='#000000' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-width' data-class='total' scope='cols' value='0' />
+            <format attr='border-style' data-class='total' scope='cols' value='none' />
+            <format attr='border-width' data-class='total' scope='rows' value='0' />
+            <format attr='border-style' data-class='total' scope='rows' value='none' />
+            <format attr='band-color' scope='cols' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#110f36' />
+            <format attr='band-size' scope='cols' value='1' />
+          </style-rule>
+          <style-rule element='dropline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='refline'>
+            <format attr='stroke-color' scope='cols' value='#5f2aff4b' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='gridline'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='zeroline'>
+            <format attr='stroke-size' value='0' />
+            <format attr='line-visibility' value='off' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='header-div'>
+            <format attr='stroke-size' scope='rows' value='0' />
+            <format attr='line-visibility' scope='rows' value='off' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <_.fcp.IndividualControlFormatting.true...format attr='color' field='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' value='#ffffff' />
+            <format attr='color' value='#f28e2b' />
+            <format attr='background-color' value='#1d195a' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='8.6001138687133789' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1wg5yce0ceru3j14prn041u5uzny].[sum:Calculation_1580860395679747:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' />
+              <wedge-size column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' />
+              <text column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' />
+              <text column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'><![CDATA[<[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]>]]></run>
+                <run>Æ&#10;</run>
+                <run bold='true'><![CDATA[<[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.4612706899642944' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.1wg5yce0ceru3j14prn041u5uzny].[sum:Calculation_1580860395679747:qk]' y-index='1'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Pie' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <text column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' />
+            </encodings>
+            <customized-label>
+              <formatted-text>
+                <run bold='true'>Total Records</run>
+                <run><![CDATA[
+<[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]>]]></run>
+              </formatted-text>
+            </customized-label>
+            <style>
+              <style-rule element='datalabel'>
+                <format attr='color-mode' value='auto' />
+                <format attr='font-size' value='6' />
+              </style-rule>
+              <style-rule element='mark'>
+                <format attr='size' value='1' />
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='mark-color' value='#ffffff' />
+              </style-rule>
+              <style-rule element='trendline'>
+                <format attr='stroke-size' value='0' />
+                <format attr='line-visibility' value='off' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.1wg5yce0ceru3j14prn041u5uzny].[sum:Calculation_1580860395679747:qk] + [federated.1wg5yce0ceru3j14prn041u5uzny].[sum:Calculation_1580860395679747:qk])</rows>
+        <cols />
+      </table>
+      <simple-id uuid='{79A36400-3EF2-48F4-B316-8B04DC447005}' />
+    </worksheet>
+    <worksheet name='Phishing Rate by TLD'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='Phishing Rate' datatype='real' name='[Calculation_1580860170960896]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='SUM(IF [label] = 0 THEN 1 ELSE 0 END) / COUNT([label])' />
+            </column>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1580860170960896]' derivation='User' name='[usr:Calculation_1580860170960896:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <manual-sort column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]' direction='ASC'>
+            <dictionary>
+              <bucket>&quot;top&quot;</bucket>
+              <bucket>&quot;app&quot;</bucket>
+              <bucket>&quot;dev&quot;</bucket>
+              <bucket>&quot;co&quot;</bucket>
+              <bucket>&quot;io&quot;</bucket>
+              <bucket>&quot;ru&quot;</bucket>
+              <bucket>&quot;other&quot;</bucket>
+              <bucket>&quot;net&quot;</bucket>
+              <bucket>&quot;com&quot;</bucket>
+              <bucket>&quot;it&quot;</bucket>
+              <bucket>&quot;de&quot;</bucket>
+              <bucket>&quot;org&quot;</bucket>
+              <bucket>&quot;au&quot;</bucket>
+              <bucket>&quot;uk&quot;</bucket>
+              <bucket>&quot;jp&quot;</bucket>
+              <bucket>%null%</bucket>
+              <bucket>%all%</bucket>
+            </dictionary>
+          </manual-sort>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='color' data-class='subtotal' value='#ffffff' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+            <format attr='color' data-class='subtotal' value='#ffffff' />
+            <format attr='color' data-class='total' value='#ffffff' />
+          </style-rule>
+          <style-rule element='field-labels-decoration'>
+            <format attr='background-color' value='#00000000' />
+          </style-rule>
+          <style-rule element='field-labels-spanner'>
+            <format attr='background-color' scope='rows' value='#ffffff' />
+          </style-rule>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]' palette='red_green_diverging_10_0' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='background-color' data-class='subtotal' scope='rows' value='#ffffff' />
+            <format attr='background-color' data-class='subtotal' scope='cols' value='#ffffff' />
+            <format attr='background-color' data-class='total' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#110f36' />
+          </style-rule>
+          <style-rule element='quick-filter'>
+            <format attr='color' value='#ffffff' />
+            <format attr='background-color' value='#1d195a' />
+          </style-rule>
+          <style-rule element='quick-filter-title'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</rows>
+        <cols>[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]</cols>
+      </table>
+      <simple-id uuid='{15DD17D0-A6ED-4C6F-BB6B-6243656498E7}' />
+    </worksheet>
+    <worksheet name='Subdomain Count vs Obfuscation Ratio'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Benton Sans Book'>Subdomain Count vs Obfuscation Ratio </run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='No Of Sub Domain' datatype='integer' name='[NoOfSubDomain]' role='measure' type='quantitative' />
+            <column caption='Obfuscation Ratio' datatype='real' name='[ObfuscationRatio]' role='measure' type='quantitative' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[NoOfSubDomain]' derivation='Sum' name='[sum:NoOfSubDomain:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[ObfuscationRatio]' derivation='Sum' name='[sum:ObfuscationRatio:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#110f36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Circle' />
+            <encodings>
+              <color column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-transparency' value='103' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1wg5yce0ceru3j14prn041u5uzny].[sum:ObfuscationRatio:qk]</rows>
+        <cols>[federated.1wg5yce0ceru3j14prn041u5uzny].[sum:NoOfSubDomain:qk]</cols>
+      </table>
+      <simple-id uuid='{EEA42070-F778-42F2-A8D7-9B80B58754CC}' />
+    </worksheet>
+    <worksheet name='Total URLs Analyzed'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='Record Count' datatype='integer' name='[Calculation_1580860171337730]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([label])' />
+            </column>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1580860171337730]' derivation='User' name='[usr:Calculation_1580860171337730:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='cell'>
+            <format attr='text-align' value='center' />
+            <format attr='vertical-align' value='center' />
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+          </style-rule>
+          <style-rule element='header'>
+            <format attr='border-width' data-class='subtotal' value='0' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='mark'>
+            <encoding attr='color' field='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' palette='whitesss' type='interpolated' />
+          </style-rule>
+          <style-rule element='pane'>
+            <format attr='border-color' value='#ffffff' />
+            <format attr='border-width' value='0' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' data-class='total' value='0' />
+            <format attr='border-style' data-class='total' value='none' />
+            <format attr='border-style' data-class='subtotal' value='none' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#1d195a' />
+          </style-rule>
+          <style-rule element='table-div'>
+            <format attr='stroke-color' scope='cols' value='#ffffff' />
+            <format attr='line-pattern-only' scope='cols' value='solid' />
+            <format attr='stroke-size' scope='cols' value='0' />
+            <format attr='line-visibility' scope='cols' value='off' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <mark-sizing mark-sizing-setting='marks-scaling-off' />
+            <encodings>
+              <color column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' />
+              <text column='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' />
+            </encodings>
+            <style>
+              <style-rule element='mark'>
+                <format attr='mark-labels-show' value='true' />
+                <format attr='mark-labels-cull' value='true' />
+                <format attr='size' value='1.4612706899642944' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows />
+        <cols />
+      </table>
+      <simple-id uuid='{CB76E569-93C9-4BDD-890F-D929B6D9449F}' />
+    </worksheet>
+    <worksheet name='URL Length Distribution'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+          </datasources>
+          <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+            <column caption='Record Count' datatype='integer' name='[Calculation_1580860171337730]' role='measure' type='quantitative'>
+              <calculation class='tableau' formula='COUNT([label])' />
+            </column>
+            <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+            <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+            <column caption='URL Length Bucket' datatype='string' name='[URL_Length_Bucket]' role='dimension' type='nominal' />
+            <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+            <column caption='Label' datatype='integer' name='[label]' role='measure' type='quantitative' />
+            <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+            <column-instance column='[URL_Length_Bucket]' derivation='None' name='[none:URL_Length_Bucket:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_1580860171337730]' derivation='User' name='[usr:Calculation_1580860171337730:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <slices>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</column>
+            <column>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='color' value='#ffffff' />
+          </style-rule>
+          <style-rule element='table'>
+            <format attr='background-color' value='#110f36' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <encodings>
+              <color column='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]</rows>
+        <cols>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:URL_Length_Bucket:nk]</cols>
+      </table>
+      <simple-id uuid='{64F99F36-5C74-4605-9D20-B481387172C6}' />
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 1'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff'>&lt;Sheet Name&gt;</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <style />
+      <size maxheight='868' maxwidth='1666' minheight='868' minwidth='1666' sizing-mode='fixed' />
+      <datasources>
+        <datasource caption='phishing_tableau_data' name='federated.1wg5yce0ceru3j14prn041u5uzny' />
+      </datasources>
+      <datasource-dependencies datasource='federated.1wg5yce0ceru3j14prn041u5uzny'>
+        <column caption='HTTPS Used' datatype='string' name='[HTTPS_Used]' role='dimension' type='nominal' />
+        <column caption='TLD Group' datatype='string' name='[TLD_Group]' role='dimension' type='nominal' />
+        <column caption='Website Status' datatype='string' name='[Website_Status]' role='dimension' type='nominal' />
+        <column-instance column='[HTTPS_Used]' derivation='None' name='[none:HTTPS_Used:nk]' pivot='key' type='nominal' />
+        <column-instance column='[TLD_Group]' derivation='None' name='[none:TLD_Group:nk]' pivot='key' type='nominal' />
+        <column-instance column='[Website_Status]' derivation='None' name='[none:Website_Status:nk]' pivot='key' type='nominal' />
+      </datasource-dependencies>
+      <zones>
+        <zone h='100000' id='2' type-v2='layout-basic' w='100000' x='0' y='0'>
+          <zone h='98156' id='23' param='horz' type-v2='layout-flow' w='99040' x='480' y='922'>
+            <zone h='98156' id='10' type-v2='layout-basic' w='99040' x='480' y='922'>
+              <zone-style>
+                <format attr='border-color' value='#ffffff' />
+                <format attr='border-style' value='solid' />
+                <format attr='border-width' value='5' />
+                <format attr='background-color' value='#1d195a' />
+              </zone-style>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='none' />
+            <format attr='border-width' value='0' />
+            <format attr='margin' value='8' />
+          </zone-style>
+        </zone>
+        <zone forceUpdate='true' h='9793' id='1' type-v2='text' w='76711' x='-4742' y='230'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontname='Arial Black' fontsize='24'>PHISHING WEBSITE ANALYTICS DASHBOARD</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='3571' id='3' type-v2='text' w='31813' x='300' y='7834'>
+          <formatted-text>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Benton Sans Book'>ANN Model | Exploratory Data Analysis &amp; Model Performance</run>
+          </formatted-text>
+        </zone>
+        <zone h='13940' id='4' name='Total URLs Analyzed' w='20588' x='2581' y='13479' />
+        <zone h='13940' id='5' name='% Phishing' w='20588' x='27491' y='13479' />
+        <zone forceUpdate='true' h='13940' id='7' type-v2='text' w='20588' x='51861' y='12788'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='15'>MODEL ACCURACY</run>
+            <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontsize='12'>97.5%</run>
+          </formatted-text>
+        </zone>
+        <zone forceUpdate='true' h='13940' id='8' type-v2='text' w='20588' x='75990' y='12788'>
+          <formatted-text>
+            <run bold='true' fontalignment='1' fontcolor='#ffffff' fontsize='15'>ROC-AUC SCORE</run>
+            <run fontalignment='1'>Æ&#10;&#10;&#10;</run>
+            <run fontalignment='1' fontcolor='#ffffff' fontname='Benton Sans Book' fontsize='12'>0.996</run>
+            <run fontalignment='1'>Æ&#10;</run>
+          </formatted-text>
+        </zone>
+        <zone h='34332' id='9' name='Legitimate vs Phishing Split' w='22749' x='1921' y='28456'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='34332' id='14' name='Phishing Rate by TLD' w='22749' x='26651' y='28456'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+            <format attr='background-color' value='#1d195a' />
+          </zone-style>
+        </zone>
+        <zone h='33641' id='18' name='URL Length Distribution' w='47419' x='1921' y='64286'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='33641' id='19' name='Subdomain Count vs Obfuscation Ratio' w='47059' x='50900' y='64286'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='34332' id='20' name='Feature Importance' w='22749' x='75270' y='28456'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='34332' id='21' name='HTTPS Usage by Website' w='22749' x='50900' y='28456'>
+          <zone-style>
+            <format attr='border-color' value='#000000' />
+            <format attr='border-style' value='solid' />
+            <format attr='border-width' value='1' />
+          </zone-style>
+        </zone>
+        <zone h='6336' id='24' mode='checkdropdown' name='Legitimate vs Phishing Split' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' type-v2='filter' values='database' w='9604' x='68127' y='4147' />
+        <zone h='6336' id='25' mode='checkdropdown' name='Phishing Rate by TLD' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]' type-v2='filter' values='database' w='9604' x='78571' y='4147' />
+        <zone h='6336' id='26' mode='checkdropdown' name='HTTPS Usage by Website' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]' type-v2='filter' values='database' w='9604' x='89016' y='4147' />
+      </zones>
+      <devicelayouts>
+        <devicelayout name='Phone' />
+      </devicelayouts>
+      <simple-id uuid='{E1D12ACA-7D2C-4FD7-9921-3AA38E3BA484}' />
+    </dashboard>
+    <dashboard enable-sort-zone-taborder='true' name='Dashboard 2'>
+      <style />
+      <size maxheight='800' maxwidth='1000' minheight='800' minwidth='1000' />
+      <zones />
+      <devicelayouts>
+        <devicelayout auto-generated='true' name='Phone'>
+          <size maxheight='700' minheight='700' sizing-mode='vscroll' />
+          <zones>
+            <zone h='100000' id='6' type-v2='layout-basic' w='100000' x='0' y='0'>
+              <zone h='84000' id='5' param='vert' type-v2='layout-flow' w='84000' x='8000' y='8000' />
+              <zone-style>
+                <format attr='border-color' value='#000000' />
+                <format attr='border-style' value='none' />
+                <format attr='border-width' value='0' />
+                <format attr='margin' value='8' />
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid='{02ABB935-D7F6-45BE-AE8F-0162628E00EF}' />
+    </dashboard>
+  </dashboards>
+  <windows saved-dpi-scale-factor='1.25' source-height='63'>
+    <window class='worksheet' name='Total URLs Analyzed'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860171337730:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <simple-id uuid='{EF5271CB-6B05-46A1-890A-305661503797}' />
+    </window>
+    <window class='worksheet' name='% Phishing'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{1CA04D35-563F-43B0-B2AF-CAF142788168}' />
+    </window>
+    <window class='worksheet' name='% Legitimate'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+      </viewpoint>
+      <simple-id uuid='{BDBC00A1-7986-46C1-A005-7CAF25AD457F}' />
+    </window>
+    <window class='worksheet' name='Legitimate vs Phishing Split'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='32'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' type='filter' />
+            <card pane-specification-id='1' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{A566D50D-E934-4C20-9C9A-FF2C1C650F0F}' />
+    </window>
+    <window class='worksheet' name='Phishing Rate by TLD'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[usr:Calculation_1580860170960896:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:TLD_Group:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{AC75BA2D-6DB4-4063-950E-07F58B164E1C}' />
+    </window>
+    <window class='worksheet' name='HTTPS Usage by Website'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]' type='filter' />
+            <card pane-specification-id='0' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:HTTPS_Used:nk]</field>
+            <field>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{4E8D239E-0BDA-47FF-90D8-CBA4BCC77D99}' />
+    </window>
+    <window class='worksheet' name='Feature Importance'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[sum:Correlation_With_Label:qk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <selection-collection>
+          <node-selection select-tuples='false'>
+            <oriented-node-reference orientation='vertical'>
+              <node-reference>
+                <fields>
+                  <field>[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[none:Feature:nk]</field>
+                </fields>
+                <multibucket>
+                  <bucket>&quot;Pay&quot;</bucket>
+                </multibucket>
+              </node-reference>
+              <page-reference />
+            </oriented-node-reference>
+          </node-selection>
+        </selection-collection>
+        <highlight>
+          <color-one-way>
+            <field>[federated.149gd9r0q6w2dz15y8uoy1st7e5q].[none:Feature:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{C6A5CDD9-33E5-4E08-9D3D-9DA1E5443EEB}' />
+    </window>
+    <window class='worksheet' name='URL Length Distribution'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:URL_Length_Bucket:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{5775BE84-F3FF-4236-A647-6AA763E11507}' />
+    </window>
+    <window class='worksheet' name='Subdomain Count vs Obfuscation Ratio'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='0' param='[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Website_Status:nk]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type='entire-view' />
+        <highlight>
+          <color-one-way>
+            <field>[federated.1wg5yce0ceru3j14prn041u5uzny].[none:Mentions_Bank:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{0A49D67D-FB6D-4739-B483-917A63E207FB}' />
+    </window>
+    <window class='dashboard' maximized='true' name='Dashboard 1'>
+      <viewpoints>
+        <viewpoint name='% Phishing'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Feature Importance'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='HTTPS Usage by Website'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Legitimate vs Phishing Split'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Phishing Rate by TLD'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Subdomain Count vs Obfuscation Ratio'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='Total URLs Analyzed'>
+          <zoom type='entire-view' />
+        </viewpoint>
+        <viewpoint name='URL Length Distribution'>
+          <zoom type='entire-view' />
+        </viewpoint>
+      </viewpoints>
+      <active id='10' />
+      <device-preview visible='true' />
+      <simple-id uuid='{9EF2FF62-F167-487F-88A2-00D9B9A3AC76}' />
+    </window>
+    <window class='dashboard' name='Dashboard 2'>
+      <viewpoints />
+      <active id='-1' />
+      <simple-id uuid='{9CBC5E75-F680-484C-BD6D-F9AEDC03C658}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='% Legitimate' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADJklEQVR4nO3WS2udVRiG4XfHSjrQYvBAESMe8AD+dEU6qAOnrVbpHxClldiJVFrbBJtQ
+      u/f3OXSg6USwhPu6xg+LtQY3rM26rutA1N6LvgC8SAIgTQCkCYA0AZAmANIEQJoASBMAaQIg
+      TQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIE
+      QJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCk
+      CYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoA
+      SBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmANIEQJoASBMAaQIgTQCkCYA0
+      AZAmANIEQJoASBMAaQIgTQCkCYA0AZAmAC6UddnNbrc8f7Ous87Muiyz3e6euxUAF8g6331z
+      Y27c/Ha2yzoz2/n6q+vzw52juffzj3Pti8/nwaNHc+3L6/Pnuszt72/N7Vs35/HZ+REIgAvk
+      bF7ef3M+ev3Vefh0N/PsdF7avzJnp6dz+P7Hc/XwvXnj4GA++eBwZma2u91cvrSde78+PvdE
+      AXCBXJ7dswdz9+GTufTH/fnteDuvHbwyJyfH8/T4/nz46WdzdvL73D06mp/u/DLvvP3WPNnt
+      z7tXr5x74mZd1/V/fAH8J+u6zLpuZm9vMzMzy7LMZrOZzWbzz+2yzDp/b/+NAEjzBSJNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQB
+      kCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBp
+      AiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkPYX
+      5uJ4DNr/GHkAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='% Phishing' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAADO0lEQVR4nO3Xv4pcdRyH4e/Mzib7Jy6rCRpNAhujENBWrAWbXERu0kY7L8BOkCCkiERs
+      1EBIIkvWnbFJYxObxQl5n6cZzvArPsV555xZrNfrzUDUarPZzMnN+9veAVux3PYA2CYBkCYA
+      0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBN
+      AKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRA
+      mgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJ
+      gDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgBI
+      EwBpAiBNAKQJgDQBkCYA0gRAmgBIEwBpAiBNAKQJgDQBkCYA0gRAmgC4MIvlclY7i39/9+py
+      d3dnZmZWrz7fFKttD+Dt8fW9L2ZvtZ7vvvlhzjYzdz7/ZO5evzwPfn0+H1w7mqvvH87p709n
+      dhfz+I+/5+OrO/Pt9w+2utkTgAuyP+d/PZmfHr+Y64fLWR0czq3jxTw7W8yjh7/Npf3d+eXR
+      n3N0fGWWm/X8/OPDeXa62fZoAXBRTmexdzx3P9qfl1euzcmNd+bl+XJu3Xh3vrr35eydn83B
+      weV58vTFrGc5n352e27f+XDeO7q01dWL8/PzzcnN+1sdwVtisZjlbGb9mh/2xXIxm9cd+J/5
+      D8DF2Wxm/V9H3qCbf8YrEHECIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECa
+      AEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmA
+      NAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgT
+      AGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQJgDSBECaAEgTAGkCIE0ApAmANAGQ
+      JgDSBECaAEgTAGkCIE0ApAmAtH8AMpBNUtk0qnAAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 1' width='192'>
+      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
+      3gKGML6SgVDejAAAAABJRU5ErkJggg==
+    </thumbnail>
+    <thumbnail height='192' name='Dashboard 2' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAACFUlEQVR4nO3TMQEAIAzAMMC/5yFjRxMFfXpnZg5Eve0A2GQA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQD
+      kGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBp
+      BiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA
+      0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDN
+      AKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxA
+      mgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZ
+      gDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFI
+      MwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKQZgDQDkGYA0gxAmgFIMwBpBiDNAKR9Y+0F
+      fBUOM1sAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Feature Importance' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAABJ0AAASdAHeZh94
+      AAAgAElEQVR4nO3daXMb2bnY8X83GvtCbATABdw3SRQpaWak2TwzvvbYN7Gvk/s+eZ1vklTl
+      I6Qqb5JU6ibxTapcuXESx76esT2bZkbLSBTFfQFAAASx70B35wUlajiURgRFsKnR+VWpBDb6
+      wdMt4eHpPqdPt6Rpmo4gvKIUXdcJ+t8yejsEwRCy0RsgCEYSBSC80kQBCK80UQDCK83QApAk
+      6cziRK4ffq6TxBhaAHNzUzjsViTo6M/167NnEiNyvXiMDFx/49K53T5JVVXdqG7Q+flpfMkY
+      zXrDkPyCIM4BhFfaQQGMTw8DoCgKJpPM6NgANoeL4X4/sixjMZuQJAmTycS7H1zng/evYpFl
+      rBYzPcFeAl47ff1BJFnGYlboGxvB5zJjtpiRJTuXLw4yNjOG3SIZtrOC8F3K4xc9XjfIMr/8
+      25/SLhaxep3cvr3J5bEexmeteNw2KqUye8kkwaCfVr1EMBLm5794h9WVGFo5jWR1MTo5gcOm
+      UKxUKbssDHndlBugKBUU1c6uLAHi6gvhfDgoAI8/wOz0EG6Pm/hOjKKqUykUaOp+rHY7ktqk
+      Uiry9d0NTDYnVqeLuasTpJM5crkcPrsZSZZQdR1d19FUDR2dh/ceEhgbIRwO49Z14j4f5gbo
+      jbyR+y0IwFNOgve7knT2z5F1JElG0zRMsoyqaUc+QJYlNE1HlvfXAzCZZFT18LqSLCOh8+1r
+      78RJsGA05bsLdP3xF1R/9PP+F/lpX37g4Autfev97375AXRNe+qBj6pDW+/skMhkMqGqatdj
+      RK6XK9dJYo4UwFn7stSmVutso2+8eYkvPrvb9RiR65Ry3bjEF593P9dJYkQ3qPBKM3wgzJbY
+      pt7hOYDTYadSrXU9RuR68RgJcDhsVKr1ruc60fYZXQD+lDgJFoxzcA4g2Ty8Nu0llW+xvbkD
+      gKxYeOvtOUqZNKkKBJQWtkAYi17j7mICrVYiFO1naz3xnY+VuHp9Dr1a4Pa9jTPcHUHozEEB
+      yFYPc9cm2Y6XsDjdDIb9tGWJ7ZtfEL1yhehshMTCBlTSpJQgP/7x6xS3l3AMX2B2Kkoi2yDY
+      Y6FYaaHVqoTCXu58vsGb77xBj8tEcrdEKOjm849uUmx03pMgCN1w6CT41peLXL02TcjvYmll
+      B7fdSngwhM1iYjeVZm09jjfgJ+ixs7mdJpXOs7uTJJmrMhiNABI2s8aXd1b46uY9rt6Yw6yp
+      FOoao2P96JKEp8eJ3W7HJi6JEM6BJ+cAsoJV0XC6PRRKNUajQdbW4vQPDVIr5Kg2NerVGsFI
+      GLPeIJkpM9jvI50pAvuHS5GAk2Q6R7XaYHhsiEYxz9TFC6wuLbFbaDA04GMnmUNt66DWmb44
+      Jc4BBEOJk2DhlWb4QNidkkqt1u4oZn5+mjt3HnY9RuR68RhJkrg8N8XdM8h1khjDC6Cm6dSe
+      fpXFM+lW65nEiFynkUsHy9nkOkmM4QUguyXkDrdiMxNHdnc/RuQ6pVx7Z5PreTG6Cnr18DLD
+      zwFW85sdjwQLwknoTR01d3jZC7cAo2N9rK/tD5wNRkPEtnNMzwwS6Q+RT6ew9ARRankKbRM9
+      TivxnSxDA70sfLPwoqkF4YW9cAEMD0cI9g+ilzK4I/309TXodTaJV5psrm7gHLLj2NshPDtD
+      rgqXxkOUynXKleZpbL8gvJBTuRp0J77LyPgQtXyOm18sUG0eHemVZRO5rXU+vbVOsmLm2sXI
+      aaQWhBfywucANpsFs82O0wy5YpVGo43NpqDpEu1mE0kxI6ttZLNCo9HC5nDSF+5hayPB7Jw4
+      BxDOTlfOAer1JvV6k9KhZa0nP7RaqACN/WX1aoX19cqLphWEU2F4N6hW1FFrnU2JHB+Psrq6
+      3fUYkesUckkwNhZl7QxyPTfmKWMEhheAXt//04mA28dKvbN/nJPEiFynkyvo8rF6BrlOEmN4
+      AfiQsHcYo+7m8J9BjMh1CrkkUDMvnqsMdKPf0PCBMNvKJo2aOAkWvt+WppN9zjo33pzj8xeZ
+      FN8/HOXK7MgzV3Z5vVgftRkWu5tgj53RqTHGhsKEe71PiZC4eHmKkWiwo40ShLNy6BBobnaM
+      OzfvMHVxknDIx/LCMmNTY6yvbDI+McButkI+pTN+YZx0skzIa0ZTK3y1VuBv/vl7JLe2iO3V
+      6ffbyNfB3GzispmITE9Sa5qYnurj00/u0FLFrRGF8+FQC/Cnj7/m6ltXiLjMfLOe58ZrY0iy
+      nRs/mmPz7j0Ut5eRaC+K1c5grxdJltA1DVXTiK9voiITifiJDvcT8Nm49zDGyIUZeixtevsD
+      BMK9OJ0WTCYTsrghi3AOHGoBBoYGSG1s4wqGmGjv8eevthgZCPKnezGGp2ZIxbbYU3UGFTNb
+      G2lajQqh4RGmRoOsrO+AJOELhWgUcsR2sui0+b//8/8hW+24HDZi69vINgcuSUdvlp61TYJw
+      Zg4VwNL9RQDM5k1arf1JKnvp3f2/s/cP1ksmdw9e5+4tHvrAvb3C4Z+zJaDELrB+apstCKfj
+      qd2gj7/8Z2FPh3qH9wYNhwOkUntdjxG5TidXKBQgnX6xXB0OFR2b4eMAcV2nw4FgBkYGiCU7
+      +wc9SYzIdYq5Oiyck+bqlOEF0KtI1Dvdir0sobOIEbk6iqlqUD7B9EwjGV4Aw2aJptphl1A8
+      wajlDGJEro5iEi2dsvZydXEf2hurw0Ek9LQBLXA6n1ywEAgF8Lhs37uOYjYjH9z7SsJqUTBb
+      zJzwUbOC0BWHWoBL85PspQu8MxImU4FGIYPk8OKzaeQrDUanr7P2zUOGRweQ7VbufrHI6HiY
+      qm7DrxTZ2a1TaGgMh1wUdCvNTIregT7iqykmp7wUVTurd+5Sqr9k7aTwg3X4EEhT2VzdZGzk
+      Olcn/OQyAcrlIhaLDU9AJb+XYyOW4drbb6C0cjh8bryhPshmWN9IMjl9gYiqE8vWGOpzUJJC
+      7G7EGR4eQpbqJ37SuCB0y6ECyOZrvPX2FRbvLlCamKCSSWP3BZkY8fOXmwuUmjIzoyG+/OQL
+      TA4XPreNarFAbCvJ0OAA8XgKzWxj0O9gdSWO1FYplaqQjhMaHMAptzF7fPgd4iF5wvlwqAA2
+      Hq6y8ej1zu4tACYvOPjo46/YiO13SaUO1k59O5SdRPrg9cp3khSqNTa303zX0Ak3WhBOy3N7
+      gZYfLHd1A1JtnXqrs56Dvr4gOzuZrseIXJ3FlF7CixwN7wbdbunUOi2A/j62tnafv+ILxohc
+      p5PrPDO8AJxmGVO7s/5oudnAZe5+jMh1vBhV16m1X77f/nAOCuBKr51mvcP/wFSMa6EOJ1Ke
+      JEbkOlZMqalya7dbV+t015lflS+6QoXzpKMWIDI5jSW7Rv/oBRS7HVmRSMYSqKUiJYcfMltk
+      G2aG+jzEdvIMDYXZXN2mfyRKpVhkdnacvVIdGlUePtjo0i4JwvF1VACKxYJikrBZrSg2Oy63
+      wtYW2BQTJrMZZHj/Jzdw2MxMV8qsbu3xk5+/weZinMn5UTQdNJOZSsPE5ZkQZ3fRtSA8XUcF
+      sJdI8u61OerVCrvbWaqYsFvNjIxOsJYpMzh/gVK2QNOkki1USe/mcVrahKMDWOQGVRxQT5FK
+      ZbH2gs3Vrd0ShOPpqABquV1+9/uj3WAPFlYBeNrDae5X6ly92sPyg1Xiu+WD5Q+LMD/f29nW
+      CsIp63ovULNW5vNPbj3z/VJTpfGUu0l/H5fLQblcff6KLxgjch0vptp6eS9uNLwb9G6mTq3D
+      G2PdGJ/i9npnN0A6SYzIdTq5zjNxcxLhlWb4rRF761kaHT4fQJIk9A4n0p8kRuR6fky5qXJr
+      5/tvd3/jxhyff95ha3OC2xyeJKbjQyDZZEKRodnq7Lj9WSQk5BMMjp1kQO2kg3Ai17NjJF7u
+      gc0jBXDhtWsE9QJtq5s7Cxv0+6xoTh/DQRetZpXB8RnWYjsElTrFUp3763s4pSZ7FZXRQT/5
+      SpNg0A/1POmijtwqMzI+yt2FdYb6vCwsbhmxn4LwVEcKQKYFth58ToU3rk2QqcKMt8Xf/58v
+      efvta2QTSTYTOdLZNaIXZvnwwzegVSedKVFpQiDYolqrkc4XuTh/leTqClaLmddenyZbrOO2
+      yWJKpHBuHDkJrpQqfHXzAR6vi2K1TcRt4s56iffevUKjnCOdzlKr1pmZv0wln2VrO83ygzWy
+      hToTo2HKpTLp3QLRgQiJ7RTBXh/5QonUzi65bBFX0I/fH8DnNBmxv4JwyJEWYGNpDYC/+29/
+      OLR8Zenwev87tvE4AoDhiVFWF5a4fWcZHdh+dKRz+MaJh4kZYYLRTm0cYHNlnc0TReqd92JI
+      EpxFjMh1jJiXcx7AY4YPhP15q9j5QNgZdZGJXKeT6zwTA2HCK83wFuDtyAlmhG0u86O+Dmcz
+      nSRG5OLzVI3mD7jTTrQAwivtUAG8+cE79LqtXLo4hizLyJLEhflLvP/BdaJhLx/+9btcmxsB
+      QJJlZFliaDiCLFsYjvYiASbT/kfKsrT/GbLE7KVxJEk6eE8QzotDh0BaucKFa7PIsonoaBS5
+      VaVYbfLRx7f54P3XGej10Kq6Afj5Lz/ALrXQFQuKss7114aIDJXpDXgolCt45Bq24BALN7+k
+      N+jjvZ+8ictp5Y+//YhK8+XuORB+OA4XgNpia7fFjQkv+baGDkhWJzfevEw2EUOrl9HsTq7O
+      T+DxeGhkd0juVWlVKxQqbcw2Ox6HmeRunQf37hOZlJi9NEY6V6dSzBNP6fgiQaxlTdwaUTgX
+      DhXAl7f2nwO2sQCyLIOuoemgKCbabRV4ch3PrburyBJomo4sS8R/u4umaZhMMqq6f9aUvf0N
+      929pz+xuFgNhgtGe2QukaU9O/fe//N+h6zx+FoKm6TweEHn85f/uZzwzj66jdjggI8vysT77
+      RWNErh8+w7tBP0udYEbYD3TA6Lzn+iES3TLCK83wFmDOa6Zh66wpVuKbXPGZux7TrVzZpsZW
+      5XQmFAkvxvACcJllLJ0+JK9Rx93pDWFPEtOlXNWX8DbiP1RP/V+6NH+BG9cvYHrObLdIJHDw
+      2un347J+/xfF63URGoxgVV7uaXTCD8dTWwCnTWJhtcC7713BbFLIZHKEBwdwOxQyOxm2sjUm
+      Ik6S2TLBwQFCfjepbIHsSpGBqWkGwx72ciUCfi/pxA7BYBBNbzIY7WdxM83shXFii/fOel8F
+      4Yin/spWLBYifX4Uu5PE8hre3iC78Rh7uzmqdRgbChPo9eL3u7GYNO4vJbE7LLjcTkZG+tB1
+      HY/Dyp17GwwOBcmkMtgtsLWdpFqt8cWXK7h6TnABlyCcsqe2AGvracxand/fu8fYxDBffnIL
+      VQeTaQdN0+kJ+DFpdfLFGqqm02prlPZSDA0E+eyjL4lEeojHd6k12nzyaZW/+tnbJJbus7XX
+      ol7MUy03eVCDqemes95fQTjkqQWQjCUOXq8tbxx5v/qt9x9rN5ssLu7f+7NQLB4sL+Tz/I//
+      +r+OrF8TnSDCOWB4L9DtbJNardlRzNz8FHfvLD1/xReM6Vau9kmmMApdocD+pc3/6t//hzNP
+      3u+x8G/+xb+k1mG3oG6xdtyVeJKYs84lnL2DFiA8NnHmyf1WjfFfeWk0O7sUwhypMNnn7XrM
+      ceMy92vkljrbB+F8MPwQqP8tJ0210xHaBgMTnT5d4yQxx4ur51VRAC+prl8LVEyusbt2n1ZL
+      PBBJOH+63gLUy0XsNoVCOkE9vYLV248rEKRR0+kdCjz/AwShi7reAmhqC2y9KO0iJkVHdgbY
+      /vrPOPz+bqcWhOfqegsQHJtDMVtR3W4UVxCL3Uqzbwyz2QSICRmCsbpeAIrZCoDJ6sBldQDQ
+      Nz3X7bSCcCyG9wIt//c89UZnPShjY4OsrcW6HnPcuOJ2ZwN5wvmhAOiazm/+7b8+8+STI2GS
+      NysdT4kckqzsfP79j+U5jZgXiRNeDo9aAJ1b//CbM0+uzU/j97up1SwdxelaG7/f3fWY48S1
+      Wm1KpVrHnyucD4YfAo2MhGg0OjuE0LQmY2PhrsccJ65QqIgCeIkdFIBkdTDoVai0IJvdv5pT
+      khXmr82Q3tqiYXLgs4LD7ye9uUVyb//Kz2DIRyadIxgJE/bbWXq4SUtcByO8JA4KQPb38auf
+      9rEQq7OymWE0GqDcUEkuLjJz7TKBvjALi3HCjhprbZmBPh9Wu5PJuRkqqR3qmomHSzHefOsy
+      LV2hmsugeHsJeWzUKmUWlpLMTEb47NO7okCEc+PQIdAXNx/y/i9+SqMtkcy3GI5Y0cIBTJJO
+      OpFkZXEJ6/QwV6/NYNKbuJwu8qUSisOFrdGmt9eLbrJgV2s4QkHytQb1hkahqnJxKorFaScQ
+      8lIqtaBVNWqfBeHAQQGo6U1up1UW/91vqDXahAJOfncnS7g/xMond2hpEq22xm4mx4P7S7i8
+      Xtq1KrrZhtSuU29L9Dgt/GVpDV9vgFalTKOtIUkSmq5jsVhxO8zkilV0TUfXRCsgGO9JC6C2
+      aQGt0n6XX2Jnv2sylUgfCtje2gGglso8WvLkN3mtsh+b3d07kqjVbFEpn9ZmC8LpMLwXaGMj
+      3fE4wMRElJWV7a7HHCdOXOX6cjO8ALLZUscFIMkK2Wyp6zEvEie8HAwvgOmAg3q9s4dmm/MZ
+      ZoL71xWlyk1ydfFbWDgZwwug12mmqXR4QlyvEnbtjx6XGm1y9S5smPBKODIfYHR8EEmSCQQ8
+      B8tC/f1cf30GxSRz5bWL+IN+3nzrMm6bmYmJQQAmJ48+7iIc2b/mPxjsfC6uIJyFIy3AyKWL
+      +JwKLq+Plm6ils/i9fu4eS/GO++/xki/j0CPi4//8g1vvXGJsZlJioV/5P33LpGrNLkwHiGR
+      KhJymVBtdtxOG9HBfnaLNUJeG3/++Cua4p5AwjlxpAUopBI4gv3YbB70Sga32//oUUgalXKZ
+      ldUYLQ10VUPXdVaXt/mrD19jZSXOQF8vvnCY4QEP9+6sMDl7CYe0f3zusOhsZ6s47GZMJhPi
+      gZHCeXCkBVhf3qbSgj6PjN0Xop5ep4aN2fEAt28t4/E4aGgKN96ep7y3w2Yiz9aGi2KpisPj
+      QVYbxGIpqqrOb3/9D1itFpILq7RVlaYKZpsTp6yjt8SggGC8IwWQyxYA2CwB8dzB8tSjOSF7
+      e/sXyv3l4y8O3svmSgex8W991uOL6gThvDK8F2gxU+14HGBqapilpU0AKuKEQngBhhdAptqi
+      Vmt1FDNuc5CpdhYjCE9jeAH0ex3UbccfCCtUxfxb4fQYXgDjIQ/NDmaErabFeYVweo50Rrpc
+      +5cYWK1P5umabXbGRiIAREcHCfh7GIqGsXzPQ8TcHufBa5u1szm/gnBWjrQAb77/Hqnlu3hD
+      YTLFOq1ilujEKKsbGd566zKXZoZZ3Yhz584qit3JldlxEtvbFLNl7B4X3t5emoU9hsZGiacL
+      aJUc0ZEh1mMZ+oNObt5cQEwIE86LIy1AMRmnZyCK3e7Ca23TNzhAu15neyuBLsmsrGyhKTbG
+      xwaZvzrF6lqSC5fG6fe7uHB5Eo/LwqUL+7da9/rcuFx2ZEmiP+Ih2wTHc54kKQhn6UgLkExl
+      2F1rMz/qoW1xUyvkqKgW3r4+w4O7i3gDPSjOOj12M/HtDPNXp2iWdukdG6aYzWNzONhJZshV
+      Gig2O06Tie1YkmarRbW9P6neXNfRG3kj9lcQDjlSAFux/Rlfn+V2Dy1ffvR3tlgFdg6Wx+NJ
+      3DaZfKnzSzKPXj4nCGfrhXuB1FaT/At0ycdyFeodDISV6qL/Xzg9hneDru92PiNMEE6L4QVg
+      tptod/CYArUlupCE02N4AfSOO6k3jr8ZhR0x/Us4PV3rkxwY6ifgcx5Zrths2M2iK1Q4H7rU
+      ApgZiwZw9Exw+6tFRoYCrMdzTIz1kcqXsRZz7JbFneEE43XtV3F4YACLrOEPuOgd6GdiIsI3
+      KylG+3v42c9vUCiIOyoLxutSC6CS2MlAq4aqyxT3ssS2UzTKZdbXEjz4ZpNI2PP8jxGELutS
+      AWh88qcvD35a+tY7qytPbjLl6410J70gHJPhvUCNSptG4/g3tlJb4smSwukxvAD21jufEikI
+      p8XwAuixW7BwvMGttqpRaYrbIAqnx/ACmIv6jz0jbK9c55tY7vkrCsIxnfmIlCQ9exaZIJy1
+      jloAk8XGz371E6rrd8nh5O5Xy/zib35Eu91kaWOXamKdXNPKxJCf1a0MkxODLC2sMjI1Rimf
+      Z35+imS2hFlr8c3th93aJ0E4to5aALVZZ2U1wcrKNoqiABKZRJI7yxkGwh5kCT746Q3GLs7w
+      0/evUK62+PCfXEctFLh4YYBKuUJDNxFLVZmd6fyRpYJw2jo+B6iWSjTaYHW4mR6P4A4GmXFV
+      eLiV5cLcBTKJNGaTSqHUIJcrsb0BgxOjWE0NWlYH5FPk8iVcJnD0dGGPBKEDHRdAfGUFgMw/
+      fgrAw9XYwXs7a0fXX6zVueLx8fDeMsnsk+t/lkswPx/qNL0gnKqu9wI1axW++OTWM9/PV5vU
+      68cbByiLJ8EIp8zwbtBvYlkxECYYxvAL8yVJQpJAdI4KRjC8BXh3qo9mo0mh2uDWZub5AYJw
+      igxvAQTBSMduASyOHkYjFtZjeSSLlR+9OUu1mOPTm0uYzSZaLRWzWUEH2q0WZouZVlMlEvGS
+      3i0iozM5M4aqS/jdDtLxzS7uliAcz7ELwKRYCPf3cf2dN/jjx1+zu72FEuzjg7dfR7dbkPQW
+      TrsbSWuSSsbxD47TyiRpSCpXb1xBr1co1jTaKthM4HLZu7lfgnAsxy4AHZ1mrUY8V2dsqJdg
+      sJdSsUCxpmPVdfR2i8UH6yhai8hkFLtWoWkyI+saqXgCFRm71U6jUuH2nUUaGszPT3dz3wTh
+      uY5dAPVihs++ymAyraKqhyelmEzyoWWL69tHlgnCedTxSfDTvtTHXfbUz9N02qqGqokbXgln
+      z/Bu0E+Wd8RAmGAY0Q0qvNIML4C5iQiT0YDRmyG8ojouAFk+3YsWHDYLNov5VD9TEI7r0DmA
+      bHLwz355lduru+zdX0Z32amrJn787iVatQqxkoS/maPRE6GZ2uThVha7zYyORK1ax+GwUa1U
+      sTkc1Gs1TIqChI7FrFBrtLFZFCpVcXNb4fw4VACSbEKyOLk8baFst1FAIhzt5f4ffk/w4lXG
+      Bv1sfBkjOmhBcgzjGxom0NtLbS9HWW1haTZwBPzYZJ29YoPBAQ/byTKWRonFWJF/+uFr/Of/
+      +BsqdfF0d+F8OHwIpOus3V/E1z9Ao61htSikNne4dP11Qm4zifQe+boJqV1DtlhQK0VW1xOs
+      Lm2DYsbhtFEt13C5neSyBe7dvs/DxU1CQ1EuzUTJ7JXwRYL4/QF8zuM/HFsQuuVQC6C2y9xe
+      KHN74T8BTwa4ZFlG17SDu/f87g+73/0cspqGqbTLXqmFLMto2pNxgP/ydztoOsjofLu7Xzwj
+      TDDa944DPB7M+vaX+VnyicTB6++urz361otxYeG8MXwg7M7yDpWKuFW6YAzDxwFqjRaNljgp
+      FoxheAEMDwbFdEjBMIYXQG/QA+J2iYJBDp0DDE1P0c7EsPT42FiLA+CP9DE73c/G0go9/cPk
+      0mnGxgfJxBPUWzJrGzH8fQMM+yVu3Y89Nck+mYDfyV629D3rCMLZOlQAvT4bzvAMkkkmMtBP
+      j0OiUWrxx4++4r0fv0F0LEoy7uLT333Ca+9cxWr3MjEzBGYnlfQWk0NebMFBooMhFu48YHQi
+      ytrSBqMzM9RzWSYmI/z9r/9ATTzkQjgnDh0C6brGw+0CEwM+7CaJSlvCZDIzOBCGVo2NtW02
+      d0qMDkewKjL1cplCtU05t8fGdoa+gRB9YS+JVJaJCxPojTKK249Za+K0yMR3spidDhxOJw6r
+      4UdfgnC4Bbh3e4lmo8mvsylUZJxmiXSuylC0l88+u4+sWKg3mgwMRtj89C6K3Y1FbpMr1dFa
+      LXRZoXo/jtXlYu3eA8xON2qjTrOYYy+TxdnTg9ZWUdsauiomwAjGO1QAjx9UUSiUASg/Wr65
+      8WiQq70/cSW+vbP/cy176MMSsdT+i2Jl/+/K/vr5R59XrYv7/gjni+HHIRtbu+i6aA0EYxhe
+      ABnRKyQYyPAC6ImI+wMJxjG8AOweMRtMMM6pFkB0bISpsWc//d1qFV924Xw5tatBzS4vI71m
+      Pvt6m9feeR25VWX5wSb9o/2EvD3kclkuzU/z6af3iUbDLN6+e1qpBeHETq8FkCR0TUNVNSyK
+      xtd3t/nrv/0xsgTJ1RV6Aj5WV7foDQW5+dkKkxP9p5ZaEE7q1AqgVcqxU5a5ODnA4r1VaDco
+      Z/PEMjUuzl/gwe0FsoUWW+tbXJ4f4PY3W6eVWhBO7FQnxKw+WD54LZsU/vD7z6k1VH6zE6et
+      6ezmlwBIJsWAmHA+dG1GmKa2qT6a6PV9j7bL74jZYIJxDO8GrZdaRm+C8AozvABcNovRmyC8
+      wgwvgIDbZvQmCK+wgwKQTAqKDNan3KdTkhVGRvqRJQmnwwqAs6eHcMB1rCQOp7jcQTifDk6C
+      PUOThEoP6Jua4+HmDv1+K4lcg7BHweEPk9hO8M6Ny/j7Qzy8+4D5N69x++YdSpUG7h4PA0P9
+      bK2sEx0fJr61w8hIH9mazqRX4uFOgUK5xdhAD2uxHBNjfTy4fd/I/RYE4NuHQLLM3LXLDA8E
+      8PpcTF2awO/rwe12oKCytZlAVyyktuMEIkHSiQQ53U7A62J2dhxfj5PpK7NkNtYw2RzYfX7C
+      LpnNzQR90T4uTfaTqMi8e3WUB5s5JgY9Bu62IOw7aAEa+T0+/iRJT6iArcfNbjJDsVgm4PKw
+      Gt/jnXeusL26zsDEKNX8Hql6i/JenenZMbKpDJLDTa1QIDo9RT5fpV2tsL2ZYnAoQjqRoo2Z
+      sZCbuw9j1EoV0q0mAYeRuy4I3yqA+l6SOrBbPjxC+/hxvjvr+y82d/YOvf+nj2VHoW0AAAA9
+      SURBVL8zqPXw8I9biSf3EV3/1nuxEgTE1RCCwQzvBSpWm0ZvgvAKM7wAchXxwAzBOIYXgCAY
+      SRSA8Er7/1tBJpbtdAcrAAAAAElFTkSuQmCC
+    </thumbnail>
+    <thumbnail height='192' name='HTTPS Usage by Website' width='192'>
+      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
+      9WlMJsgNTy8AAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Legitimate vs Phishing Split' width='192'>
+      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
+      gg==
+    </thumbnail>
+    <thumbnail height='192' name='Phishing Rate by TLD' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Subdomain Count vs Obfuscation Ratio' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='25' name='Total URLs Analyzed' width='84'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='URL Length Distribution' width='192'>
+      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
+    </thumbnail>
+  </thumbnails>
+</workbook>
